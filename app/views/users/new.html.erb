@@ -1,0 +1,10 @@
+<h1>Creating new account</h1>
+<hr>
+<%=form_for @user do |f|%>
+  <%=f.text_field :first_name, placeholder: "first name", class: "form-control"%>
+  <%=f.text_field :last_name, placeholder: "last name", class: "form-control"%>
+  <%=f.email_field :email, placeholder: "email", class: "form-control"%>
+  <%=f.password_field :password, placeholder: "password", class: "form-control"%>
+  <%=f.password_field :password_confirmation, placeholder: "password confirmation", class: "form-control"%>
+  <%=f.submit "Create account", class: "btn btn-success"%>
+<%end%>

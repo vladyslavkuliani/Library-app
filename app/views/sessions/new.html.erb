@@ -1,0 +1,7 @@
+<h1>Logging in</h1>
+<hr>
+<%=form_for @user, url: "/sessions" do |f|%>
+  <%=f.email_field :email, placeholder: "email", class: "form-control"%>
+  <%=f.password_field :password, placeholder: "password", class: "form-control"%>
+  <%=f.submit "Log in", class: "btn btn-success"%>
+<%end%>
