@@ -1,0 +1,12 @@
+<%=form_for @library do |f|%>
+  <div>
+    <%=f.text_field :name, placeholder: "name", class: "form-control"%>
+  </div>
+  <div>
+    <%=f.number_field :floor_count, placeholder: "floor count", class: "form-control"%>
+  </div>
+  <div>
+    <%=f.number_field :floor_area, placeholder: "name", class: "form-control"%>
+  </div>
+  <%=f.submit "Save changes"%>
+<%end%>
